@@ -1,0 +1,8 @@
+.fondo {
+    background-image: url('../assets/background.jpg'); /* Cambia la ruta según sea necesario */
+    background-size: cover; /* Asegura que la imagen cubra completamente el área */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: #a7a7a78a;
+}

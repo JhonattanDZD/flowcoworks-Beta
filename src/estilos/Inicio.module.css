@@ -1,0 +1,25 @@
+.fondo {
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
+}
+
+.fondo::before {
+    content: ""; /* Crea un pseudo-elemento */
+    position: fixed; /* Posición absoluta para cubrir el fondo */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/background.webp');
+    background-size: cover; /* Asegura que la imagen cubra completamente el área */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    opacity: 0.3; /* Ajusta la opacidad aquí (0 es completamente transparente, 1 es completamente opaco) */
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+/* Estilos adicionales para el contenido */
+.fondo > * {
+    position: relative; /* Asegúrate de que el contenido esté por encima del fondo */
+    z-index: 1; /* Asegúrate de que el contenido esté en frente */
+}
